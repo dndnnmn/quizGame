@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+<body class="bg-nero">
+
+    
+   
+
+       <nav class="bg-nero">
+         <div class="max-w-7xl mx-auto px-5 py-2">
+         
+            <div class="text-white flex justify-between font-body">
+        
+          
+               <div class="flex space-x-3"> 
+                  <div class="logo flex items-center">
+                    <a href="" class="py-6 px-3">LOGO</a>
+                  </div>
+
+                  <div class=" hidden tablet:flex tablet:items-center">
+                    <a href="" class=" px-3 ">Home</a>
+                    <a href="" class=" px-3 ">About</a>
+                    <a href="" class=" px-3 ">Contacts</a>
+                  </div>
+                </div>
+                <div class=" hidden tablet:flex tablet:items-center tablet:space-x-5 text-sm">
+            <a href=""> Log-in</a>
+            <a href="" class="bg-yellow-400 py-2 px-3 rounded-2xl hover:bg-yellow-300 duration-400 hover:text-black"> Sign-in </a>
+         </div>
+         
+
+         <!-- menu mobile goes here -->
+         <div class=" tablet:hidden flex items-center">
+            <span class="mobile-menu-button">
+                 <ion-icon class="text-4xl cursor-pointer" name="menu-outline"> </ion-icon>
+            </span>
+         </div>
+          
+          </div>
+         </div>
+
+         <div class=" mobile-menu hidden flex-col flex space-y-12 items-center text-white pb-10 tablet:hidden ">
+            <a href="" class="py-3"> About</a>
+            <a href="" class="py-3"> Home</a>
+            <a href="" class="py-3"> Contacts</a>
+            <a href="" class="py-2 bg-yellow-400 px-4 rounded-2xl hover:bg-yellow-300 duration-400 hover:text-black">Sign-in</a>
+      </div>
+       </nav>
+
+
+       <main class="py-10">
+             
+         <div class=" flex-wrap flex  tablet:flex-row mx-auto items-center mt-20 justify-around laptop:justify-around laptop:flex">
+           
+            <section class="pr-10">
+               <h1 class="text-white text-[3.9rem] font-body font-bold max-w-xl leading-none pb-2 text-center tablet:text-left">
+                  START SHOPPING NOW !
+               </h1>
+
+               <p class="text-white text-sm max-w-xl font-medium leading-relaxed pb-8 text-center tablet:text-left">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a, possimus minus explicabo perspiciatis aut laboriosam laudantium praesentium quaerat, facilis similique optio quia error, dolor at porro culpa ducimus earum?
+               </p>
+
+               <div class="flex justify-center tablet:justify-start gap-4 tablet:flex pb-10 container">
+                  <button type="button" class="bg-slate-100 px-4 py-[0.7rem] ">
+                     Learn More
+                  </button>
+                  
+                  <button type="button" class="text-white border-white border-2 px-6 py-2.5 ">
+                     Sign in
+                  </button>
+               </div>
+            </section>
+
+            <section class="">
+               <img src="shoez.png" alt="" class="desktop:w-[28rem] desktop:h-[28rem] laptop:w-[24rem] laptop:h-[24rem] ">
+            </section>
+         </div>
+        
+       </main>
+       
+  
+   
+      
+
+   
+
+</body>
+
+<script>
+   const btn = document.querySelector('.mobile-menu-button');
+   const menu = document.querySelector('.mobile-menu');
+
+   btn.addEventListener('click', () => {
+     menu.classList.toggle('hidden');
+   });
+ </script>
+
+</html>
