@@ -72,37 +72,18 @@ function generatePasswordHandler() {
     let passwordLength = slider.value; 
     const password = generatePassword(passwordLength, isLowercaseSelected(), isUppercaseSelected(), isNumbersSelected(), isSpecialCharSelected());
     myText.value = password; 
+    
 
-
-    
-    
-    // Clear existing text color styles before each check
-passwordStrength.style.color = ""; // Reset color
-
-// Check password strength
-if (password.length > 16 && isNumbersSelected()) {
-    passwordStrength.textContent = "Strong";
-    passwordStrength.style.color = "#26d730"; // Green
-} else if (
-    password.length >= 13 && 
-    (isUppercaseSelected() || isLowercaseSelected() || isSpecialCharSelected())
-) {
-    passwordStrength.textContent = "Strong";
-    passwordStrength.style.color = "#26d730"; // Green
-} else if (password.length >= 6 && (
-    (isUppercaseSelected() || isLowercaseSelected()) && 
-    (isNumbersSelected() || isSpecialCharSelected())
-)) {
-    passwordStrength.textContent = "Moderate";
-    passwordStrength.style.color = "orange"; // Orange
-} else if (password.length <= 5) { // Ensure Weak for lengths 1-5
-    passwordStrength.textContent = "Weak";
-    passwordStrength.style.color = "#ff5925"; // Red
-} else {
-    passwordStrength.tex
-}
-    
-    
+    if ((isLowercaseSelected() || isUppercaseSelected()) && (isNumbersSelected() || isSpecialCharSelected()) && password.length >= 8) {
+        passwordStrength.textContent = "Strong";
+        passwordStrength.style.color = "#26d730";
+    } else if( (isLowercaseSelected() || isUppercaseSelected()) || (isNumbersSelected() || isSpecialCharSelected()) && password.length >= 6) {
+        passwordStrength.textContent ="Moderate";
+        passwordStrength.style.color = "orange"; 
+    } else {
+        passwordStrength.textContent ="Weak";
+        passwordStrength.style.color = "#ff5925";
+    }
 }
 
 
