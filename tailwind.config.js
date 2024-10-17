@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: [
-    './src/**/*.{html,js}',   // existing folder
-    './dist/**/*.{html,js}',  // existing folder
-    './new/**/*.{html,js}',   // add your new folder here
+    './src/**/*.{html,js}',   
+    './dist/**/*.{html,js}',  
+    './new/**/*.{html,js}',   
+    './password/**/*.{html,js}',  
   ],
+  
   theme: {
     extend: {
     
