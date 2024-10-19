@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "new": "tailwindcss -i ./src/input.css -o ./new/output.css --watch",
-    "pass": "tailwindcss -i ./src/input.css -o ./password/output.css --watch"
+    "pass": "tailwindcss -i ./src/input.css -o ./password/output.css --watch",
+    "quiz": "tailwindcss -i ./src/input.css -o ./quizGame/output.css --watch"
   },
   "author": "",
   "license": "ISC",

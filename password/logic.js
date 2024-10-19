@@ -69,15 +69,22 @@ function isSpecialCharSelected() {
 
 function generatePasswordHandler() {
     alertText.textContent = 'Password Generator';
+
     let passwordLength = slider.value; 
     const password = generatePassword(passwordLength, isLowercaseSelected(), isUppercaseSelected(), isNumbersSelected(), isSpecialCharSelected());
+    
+    bg.classList.remove('bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))]', 'from-blue-700', 'via-blue-800', 'to-gray-800');
+    
+    // Add a Tailwind green background class
+    bg.classList.add('bg-green-500');
+
     myText.value = password; 
     
 
     if ((isLowercaseSelected() || isUppercaseSelected()) && (isNumbersSelected() || isSpecialCharSelected()) && password.length >= 8) {
         passwordStrength.textContent = "Strong";
         passwordStrength.style.color = "#26d730";
-    } else if( (isLowercaseSelected() || isUppercaseSelected()) || (isNumbersSelected() || isSpecialCharSelected()) && password.length >= 6) {
+    } else if( ((isLowercaseSelected() || isUppercaseSelected()) || (isNumbersSelected() || isSpecialCharSelected())) && password.length >= 6) {
         passwordStrength.textContent ="Moderate";
         passwordStrength.style.color = "orange"; 
     } else {

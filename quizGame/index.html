@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+
+    <style>
+    .no-hover {
+    @apply bg-neutral text-white cursor-default; /* Apply neutral styles */
+    pointer-events: none; /* Prevent pointer events */
+}
+
+/* Optionally, you can define this if you want to keep the button looking disabled */
+.no-hover:hover {
+    background-color: inherit !important; /* Prevent hover color change */
+    color: inherit !important; /* Prevent text color change */
+}
+
+
+    </style>
+
+</head>
+
+<body class="h-screen w-full bg-[#1a1a1a] bg-opacity-100 overflow-hidden ">
+
+    <div id="cont" class="w-full pt-10 gap-8 flex items-center justify-center flex-col h-full md:gap-20">
+        <h1 id="header" class="text-white font-ver text-5xl text-center mt-5 font-extrabold md:text-[90px]"> QUIZ GAME </h1>
+        <button id="start" onclick="showGame()" class="btn btn-primary bg-[#764ebe] btn-lg h-20 w-60 text-3xl font-ver border-none">Start Game</button>
+      </div>
+      
+    
+
+    <div id="container1" class="flex items-center justify-center w-full mt-10 md:mt-16">
+
+
+        <div id="box" class="contain flex  flex-col w-[95%] tablet:w-[70%] lg:w-3/5  ">
+
+            <div class="bg-[#212121] h-full md:h-[400px] flex  flex-col size-60 items-center justify-center w-full rounded-lg p-6"> <!-- Added padding for better visibility -->
+                <h1 id="question" class="text-white text-2xl  md:text-3xl font-ver font-semibold  md:mt-10 lg:mt-4  text-center  h-3/4 lg:h-2/6"> </h1>
+
+                <div id="answer-btns" class=" grid grid-cols-1 md:grid-cols-2 w-full gap-6 md:gap-8  mt-10 md:mt-0">
+                    <!-- questions inside here  -->
+                </div>
+
+            </div>
+            <button
+                id="next-btn"
+                class="btn btn-primary font-ver w-full text-md text-white mt-6 h-14 bg-[#764ebe] border-none hidden "
+                onclick="movebox()"> Next </button>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+   <script src="logic.js"> </script>
+
+</body>
+</html>
