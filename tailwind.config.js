@@ -8,6 +8,10 @@ module.exports = {
     './password/**/*.{html,js}',  
     './quizGame/**/*.{html,js}', 
   ],
+
+  future: {
+    hoverOnlyWhenSupported: true, // Enable hover only when supported
+  },
   
   theme: {
     extend: {

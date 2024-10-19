@@ -2704,10 +2704,6 @@ html{
   margin-top: 60px;
 }
 
-.mt-8{
-  margin-top: 2rem;
-}
-
 .block{
   display: block;
 }
@@ -2766,6 +2762,10 @@ html{
   height: 6rem;
 }
 
+.h-3\/4{
+  height: 75%;
+}
+
 .h-4{
   height: 1rem;
 }
@@ -2814,28 +2814,12 @@ html{
   height: 100vh;
 }
 
-.h-2\/4{
-  height: 50%;
+.h-16{
+  height: 4rem;
 }
 
-.h-3\/4{
-  height: 75%;
-}
-
-.h-\[10px\]{
-  height: 10px;
-}
-
-.h-\[40\%\]{
-  height: 40%;
-}
-
-.h-\[50\%\]{
-  height: 50%;
-}
-
-.h-\[30\%\]{
-  height: 30%;
+.h-11{
+  height: 2.75rem;
 }
 
 .max-h-10{
@@ -2876,10 +2860,6 @@ html{
 
 .w-2\/5{
   width: 40%;
-}
-
-.w-2\/6{
-  width: 33.333333%;
 }
 
 .w-36{
@@ -3064,10 +3044,6 @@ html{
   gap: 0.25rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .gap-2{
   gap: 0.5rem;
 }
@@ -3100,14 +3076,6 @@ html{
   gap: 2rem;
 }
 
-.gap-16{
-  gap: 4rem;
-}
-
-.gap-14{
-  gap: 3.5rem;
-}
-
 .gap-x-2{
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -3131,14 +3099,6 @@ html{
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-x-hidden{
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden{
-  overflow-y: hidden;
 }
 
 .rounded{
@@ -3295,6 +3255,11 @@ html{
   background-color: rgb(43 43 43 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#2b3440\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 52 64 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#2f3136\]{
   --tw-bg-opacity: 1;
   background-color: rgb(47 49 54 / var(--tw-bg-opacity));
@@ -3313,6 +3278,11 @@ html{
 .bg-\[\#5865F2\]{
   --tw-bg-opacity: 1;
   background-color: rgb(88 101 242 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#764ebe\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(118 78 190 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(24\2c 41\2c 48\)\]{
@@ -3375,14 +3345,9 @@ html{
   background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
 }
 
-.bg-red-700{
+.bg-red-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
-.bg-red-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100{
@@ -3407,26 +3372,6 @@ html{
 .bg-yellow-400{
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
-.bg-red-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#673ab7\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(103 58 183 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#764ebe\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(118 78 190 / var(--tw-bg-opacity));
-}
-
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-100{
@@ -3691,10 +3636,6 @@ html{
   padding-top: 18rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -3797,10 +3738,6 @@ html{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[100px\]{
-  font-size: 100px;
 }
 
 .font-bold{
@@ -4016,241 +3953,6 @@ html{
   transition-duration: 500ms;
 }
 
-@media (min-width: 768px){
-  .md\:btn{
-    display: inline-flex;
-    height: 3rem;
-    min-height: 3rem;
-    flex-shrink: 0;
-    cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--rounded-btn, 0.5rem);
-    border-color: transparent;
-    border-color: oklch(var(--btn-color, var(--b2)) / var(--tw-border-opacity));
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-    font-size: 0.875rem;
-    line-height: 1em;
-    gap: 0.5rem;
-    font-weight: 600;
-    text-decoration-line: none;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    border-width: var(--border-btn, 1px);
-    transition-property: color, background-color, border-color, opacity, box-shadow, transform;
-    --tw-text-opacity: 1;
-    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
-    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    outline-color: var(--fallback-bc,oklch(var(--bc)/1));
-    background-color: oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity));
-    --tw-bg-opacity: 1;
-    --tw-border-opacity: 1;
-  }
-
-  .md\:btn[disabled],.md\:btn:disabled{
-    pointer-events: none;
-  }
-
-  :where(.md\:btn:is(input[type="checkbox"])),
-:where(.md\:btn:is(input[type="radio"])){
-    width: auto;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-  }
-
-  .md\:btn:is(input[type="checkbox"]):after,.md\:btn:is(input[type="radio"]):after{
-    --tw-content: attr(aria-label);
-    content: var(--tw-content);
-  }
-
-  @media (hover: hover){
-    .md\:btn:hover{
-      --tw-border-opacity: 1;
-      border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
-      --tw-bg-opacity: 1;
-      background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
-    }
-
-    @supports (color: color-mix(in oklab, black, black)){
-      .md\:btn:hover{
-        background-color: color-mix(
-            in oklab,
-            oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity, 1)) 90%,
-            black
-          );
-        border-color: color-mix(
-            in oklab,
-            oklch(var(--btn-color, var(--b2)) / var(--tw-border-opacity, 1)) 90%,
-            black
-          );
-      }
-    }
-
-    @supports not (color: oklch(0% 0 0)){
-      .md\:btn:hover{
-        background-color: var(--btn-color, var(--fallback-b2));
-        border-color: var(--btn-color, var(--fallback-b2));
-      }
-    }
-
-    .md\:btn:hover{
-      --tw-border-opacity: 1;
-      border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
-      --tw-bg-opacity: 1;
-      background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
-    }
-
-    @supports (color: color-mix(in oklab, black, black)){
-      .md\:btn:hover{
-        background-color: color-mix(
-            in oklab,
-            oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity, 1)) 90%,
-            black
-          );
-        border-color: color-mix(
-            in oklab,
-            oklch(var(--btn-color, var(--b2)) / var(--tw-border-opacity, 1)) 90%,
-            black
-          );
-      }
-    }
-
-    @supports not (color: oklch(0% 0 0)){
-      .md\:btn:hover{
-        background-color: var(--btn-color, var(--fallback-b2));
-        border-color: var(--btn-color, var(--fallback-b2));
-      }
-    }
-
-    .md\:btn:hover{
-      --tw-border-opacity: 1;
-      border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
-      --tw-bg-opacity: 1;
-      background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
-    }
-
-    @supports (color: color-mix(in oklab, black, black)){
-      .md\:btn:hover{
-        background-color: color-mix(
-            in oklab,
-            oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity, 1)) 90%,
-            black
-          );
-        border-color: color-mix(
-            in oklab,
-            oklch(var(--btn-color, var(--b2)) / var(--tw-border-opacity, 1)) 90%,
-            black
-          );
-      }
-    }
-
-    @supports not (color: oklch(0% 0 0)){
-      .md\:btn:hover{
-        background-color: var(--btn-color, var(--fallback-b2));
-        border-color: var(--btn-color, var(--fallback-b2));
-      }
-    }
-
-    .md\:btn.glass:hover{
-      --glass-opacity: 25%;
-      --glass-border-opacity: 15%;
-    }
-
-    .md\:btn[disabled]:hover,.md\:btn:disabled:hover{
-      --tw-border-opacity: 0;
-      background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
-      --tw-bg-opacity: 0.2;
-      color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
-      --tw-text-opacity: 0.2;
-    }
-
-    @supports (color: color-mix(in oklab, black, black)){
-      .md\:btn:is(input[type="checkbox"]:checked):hover,.md\:btn:is(input[type="radio"]:checked):hover{
-        background-color: color-mix(in oklab, var(--fallback-p,oklch(var(--p)/1)) 90%, black);
-        border-color: color-mix(in oklab, var(--fallback-p,oklch(var(--p)/1)) 90%, black);
-      }
-    }
-  }
-
-  @media (prefers-reduced-motion: no-preference){
-    .md\:btn{
-      animation: button-pop var(--animation-btn, 0.25s) ease-out;
-    }
-  }
-
-  .md\:btn:active:hover,.md\:btn:active:focus{
-    animation: button-pop 0s ease-out;
-    transform: scale(var(--btn-focus-scale, 0.97));
-  }
-
-  @supports not (color: oklch(0% 0 0)){
-    .md\:btn{
-      background-color: var(--btn-color, var(--fallback-b2));
-      border-color: var(--btn-color, var(--fallback-b2));
-    }
-  }
-
-  .md\:btn:focus-visible{
-    outline-style: solid;
-    outline-width: 2px;
-    outline-offset: 2px;
-  }
-
-  .md\:btn.glass{
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    outline-color: currentColor;
-  }
-
-  .md\:btn.glass.btn-active{
-    --glass-opacity: 25%;
-    --glass-border-opacity: 15%;
-  }
-
-  .md\:btn.btn-disabled,.md\:btn[disabled],.md\:btn:disabled{
-    --tw-border-opacity: 0;
-    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
-    --tw-bg-opacity: 0.2;
-    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
-    --tw-text-opacity: 0.2;
-  }
-
-  .md\:btn:is(input[type="checkbox"]:checked),.md\:btn:is(input[type="radio"]:checked){
-    --tw-border-opacity: 1;
-    border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
-    --tw-bg-opacity: 1;
-    background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
-    --tw-text-opacity: 1;
-    color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
-  }
-
-  .md\:btn:is(input[type="checkbox"]:checked):focus-visible,.md\:btn:is(input[type="radio"]:checked):focus-visible{
-    outline-color: var(--fallback-p,oklch(var(--p)/1));
-  }
-
-  .join > :where(*:not(:first-child)):is(.md\:btn){
-    margin-inline-start: calc(var(--border-btn) * -1);
-  }
-
-  .join.join-vertical > :where(*:not(:first-child)):is(.md\:btn){
-    margin-top: calc(var(--border-btn) * -1);
-  }
-
-  .join.join-horizontal > :where(*:not(:first-child)):is(.md\:btn){
-    margin-inline-start: calc(var(--border-btn) * -1);
-  }
-}
-
 .\*\:font-ver > *{
   font-family: Verdana;
 }
@@ -4265,38 +3967,40 @@ html{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.hover\:bg-blue-800:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-}
+@media (hover: hover) and (pointer: fine){
+  .hover\:bg-blue-800:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  }
 
-.hover\:bg-gray-700:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
+  .hover\:bg-gray-700:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  }
 
-.hover\:bg-yellow-300:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
+  .hover\:bg-yellow-300:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+  }
 
-.hover\:object-center:hover{
-  -o-object-position: center;
-     object-position: center;
-}
+  .hover\:object-center:hover{
+    -o-object-position: center;
+       object-position: center;
+  }
 
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
+  .hover\:text-black:hover{
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
 
-.hover\:text-blue-600:hover{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
+  .hover\:text-blue-600:hover{
+    --tw-text-opacity: 1;
+    color: rgb(37 99 235 / var(--tw-text-opacity));
+  }
 
-.hover\:underline:hover{
-  text-decoration-line: underline;
+  .hover\:underline:hover{
+    text-decoration-line: underline;
+  }
 }
 
 .focus\:border-blue-600:focus{
@@ -4347,10 +4051,6 @@ html{
 }
 
 @media (min-width: 640px){
-  .sm\:pointer-events-none{
-    pointer-events: none;
-  }
-
   .sm\:absolute{
     position: absolute;
   }
@@ -4440,16 +4140,6 @@ html{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .sm\:hover\:bg-neutral:hover{
-    --tw-bg-opacity: 1;
-    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
-  }
-
-  .sm\:hover\:text-white:hover{
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 766px){
@@ -4515,40 +4205,20 @@ html{
     margin-bottom: 1.5rem;
   }
 
-  .md\:mt-16{
-    margin-top: 4rem;
-  }
-
-  .md\:mt-20{
-    margin-top: 5rem;
-  }
-
-  .md\:mt-4{
-    margin-top: 1rem;
-  }
-
-  .md\:mt-14{
-    margin-top: 3.5rem;
+  .md\:mt-0{
+    margin-top: 0px;
   }
 
   .md\:mt-10{
     margin-top: 2.5rem;
   }
 
-  .md\:mt-8{
-    margin-top: 2rem;
+  .md\:mt-16{
+    margin-top: 4rem;
   }
 
-  .md\:mt-6{
-    margin-top: 1.5rem;
-  }
-
-  .md\:mt-2{
-    margin-top: 0.5rem;
-  }
-
-  .md\:mt-0{
-    margin-top: 0px;
+  .md\:mt-4{
+    margin-top: 1rem;
   }
 
   .md\:flex{
@@ -4615,20 +4285,16 @@ html{
     gap: 0px;
   }
 
+  .md\:gap-20{
+    gap: 5rem;
+  }
+
   .md\:gap-4{
     gap: 1rem;
   }
 
   .md\:gap-8{
     gap: 2rem;
-  }
-
-  .md\:gap-20{
-    gap: 5rem;
-  }
-
-  .md\:gap-2{
-    gap: 0.5rem;
   }
 
   .md\:p-0{
@@ -4677,6 +4343,10 @@ html{
     line-height: 1;
   }
 
+  .md\:text-\[90px\]{
+    font-size: 90px;
+  }
+
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -4685,19 +4355,6 @@ html{
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .md\:text-\[100px\]{
-    font-size: 100px;
-  }
-
-  .md\:text-\[90px\]{
-    font-size: 90px;
   }
 }
 
@@ -4712,10 +4369,6 @@ html{
 
   .lg\:mb-16{
     margin-bottom: 4rem;
-  }
-
-  .lg\:mb-20{
-    margin-bottom: 5rem;
   }
 
   .lg\:mb-4{
@@ -4734,16 +4387,12 @@ html{
     margin-right: 2.5rem;
   }
 
-  .lg\:mt-6{
-    margin-top: 1.5rem;
+  .lg\:mt-4{
+    margin-top: 1rem;
   }
 
   .lg\:mt-7{
     margin-top: 1.75rem;
-  }
-
-  .lg\:mt-4{
-    margin-top: 1rem;
   }
 
   .lg\:flex{
@@ -4754,16 +4403,16 @@ html{
     display: none;
   }
 
+  .lg\:h-2\/6{
+    height: 33.333333%;
+  }
+
   .lg\:h-\[252px\]{
     height: 252px;
   }
 
   .lg\:h-full{
     height: 100%;
-  }
-
-  .lg\:h-2\/6{
-    height: 33.333333%;
   }
 
   .lg\:w-2\/5{

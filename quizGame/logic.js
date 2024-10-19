@@ -121,20 +121,20 @@ function showQuestion() {
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-   
     currentQuestion.answers.forEach(answerObj => {
         const button = document.createElement("button"); // Create a new button
-        button.className = "btn btn-neutral text-white font-ver h-6 md:h-16 "; // Set class names
+        button.className = "btn btn-neutral text-white font-ver h-6 md:h-16"; // Set class names
         button.innerText = answerObj.text; // Set button text
         button.dataset.correct = answerObj.correct; // Add data-correct attribute
 
-       
+        // Add both click and touchend event listeners
         button.addEventListener("click", selectAnswer);
+        button.addEventListener("touchend", selectAnswer); // Add touch event
 
         answer.appendChild(button); // Append the button to the answer section
-
-        nextButton.classList.add('hidden');
     });
+
+    nextButton.classList.add('hidden');
 }
 
 function resetState() {
@@ -146,19 +146,24 @@ function resetState() {
     }
 }
 
+// Update selectAnswer function to include touch event handling
 function selectAnswer(e) {
+    // Prevent default behavior if it's a touch event
+    if (e.type === "touchend") {
+        e.preventDefault();
+    }
+
     const selectedBtn = e.target; // Get the clicked button
     const isCorrect = selectedBtn.dataset.correct === "true"; // Check if the answer is correct
 
     // Change the button's background color based on correctness
     if (isCorrect) {
         selectedBtn.classList.add("bg-green-500"); 
-        score ++;
+        score++;
     } else {
         selectedBtn.classList.add("bg-red-500"); 
-
     }
-    
+
     // Disable all buttons after one is clicked
     Array.from(answer.children).forEach(button => {
         button.classList.add("no-hover"); // Disable pointer events
@@ -166,12 +171,11 @@ function selectAnswer(e) {
             button.classList.add("bg-green-500"); // Correct button color
         }
     });
-    
-    nextButton.classList.remove('hidden')
-    nextButton.classList.add('flex');
 
-      
+    nextButton.classList.remove('hidden');
+    nextButton.classList.add('flex');
 }
+
 
 function showScore(params) {
     resetState();
