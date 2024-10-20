@@ -119,6 +119,7 @@ function showQuestion() {
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
+    
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
     currentQuestion.answers.forEach(answerObj => {
@@ -196,7 +197,7 @@ function handleNextButton() {
     currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.length) {
-        movebox(); // Call movebox to transition between containers
+        // Call movebox to transition between containers
         showQuestion(); 
     } else {
         showScore();

@@ -2814,14 +2814,6 @@ html{
   height: 100vh;
 }
 
-.h-16{
-  height: 4rem;
-}
-
-.h-11{
-  height: 2.75rem;
-}
-
 .max-h-10{
   max-height: 2.5rem;
 }
@@ -3099,6 +3091,14 @@ html{
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden{
+  overflow-y: hidden;
 }
 
 .rounded{
