@@ -73,9 +73,6 @@ function generatePasswordHandler() {
     let passwordLength = slider.value; 
     const password = generatePassword(passwordLength, isLowercaseSelected(), isUppercaseSelected(), isNumbersSelected(), isSpecialCharSelected());
     
-    bg.classList.remove('bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))]', 'from-blue-700', 'via-blue-800', 'to-gray-800');
-    
-
 
     myText.value = password; 
     
