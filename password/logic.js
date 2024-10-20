@@ -75,8 +75,7 @@ function generatePasswordHandler() {
     
     bg.classList.remove('bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))]', 'from-blue-700', 'via-blue-800', 'to-gray-800');
     
-    // Add a Tailwind green background class
-    bg.classList.add('bg-green-500');
+
 
     myText.value = password; 
     
